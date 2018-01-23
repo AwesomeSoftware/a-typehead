@@ -1,0 +1,17 @@
+<div class="input-group a-typehead"
+    (mouseenter)="onInputGroupMouseEntered($event)">
+    <input type="text" class="form-control" autocomplete="off"
+        (blur)="onInputBlur($event)"
+        (keydown)="onInputKeyPressed($event)"
+        (ngModelChange)="onInputChange($event)"
+        [id]="id"
+        [(ngModel)]="typeHeadValue"
+        [disabled]="isDisabled" />
+    <input type="hidden" [formControl]="formControl" />
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-secondary" (click)="toggleOptions()" [disabled]="isDisabled">
+            <i class="dropdown-toggle"></i>
+        </button>
+    </span>
+</div>
+<div *ngIf="debug">debug: {{_selectedOption|json}}</div>

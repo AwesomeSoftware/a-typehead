@@ -1,0 +1,49 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "awesome-typehead"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "tsconfig": "tsconfig.app.json",
+      "prefix": "app",
+      "styles": [
+        "app/core/preloader/preloader.scss",
+        "styles.scss"
+      ],
+      "scripts": [
+        "app/core/preloader/preloader.js",
+        "../node_modules/pace-js/pace.js",
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/summernote/dist/summernote.js",
+        "../node_modules/loaders.css/loaders.css.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    }
+  ],
+  "defaults": {
+    "styleExt": "scss",
+    "component": {},
+    "build": {
+      "showCircularDependencies": false
+    }
+  }
+}

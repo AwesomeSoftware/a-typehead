@@ -1,0 +1,19 @@
+<div class="a-options"
+    (mouseenter)="onMouseEntered($event)" >
+    <ul class="dropdown-menu show">
+        <li class="hidden">
+            <a href="javascript:void(0);" class="dropdown-item"
+                *ngIf="helperButton"
+                (click)="onHelperButtonClickHandler($event)">{{helperButton}}</a>
+        </li>
+        <li *ngFor="let option of options; let index=index">
+            <a href="javascript:void(0);" class="dropdown-item" (click)="selectOption(option)"
+                [ngClass]="{'active': isOptionSelected(option), 'hover': index === activeFocusPosition && !isOptionSelected(option)}">
+                {{option.text}}
+            </a>
+        </li>
+        <li *ngIf="!options || options.length === 0">
+            <div class="text-center">No matches</div>
+        </li>
+    </ul>
+</div>

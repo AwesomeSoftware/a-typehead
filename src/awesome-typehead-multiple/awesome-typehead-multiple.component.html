@@ -1,0 +1,28 @@
+<div class="input-group a-typehead-multiple">
+    <div class="form-control typehead-container"
+        [ngClass]="{'focus': inputFocusedIn}">
+        <span class="badge badge-secondary option"
+            *ngFor="let option of selectedOptionsValue; let index=index">
+            <span class="option-text">{{option.text}}</span>
+            <span class="option-close"
+                (click)="onOptionRemove(option)">
+                <i class="ion-close-round"></i>
+            </span>
+        </span>
+        <input type="text" class="form-control typehead-input" autocomplete="off"
+            (blur)="onInputBlur($event)"
+            (focus)="onInputFocus($event)"
+            (keydown)="onInputKeyPressed($event)"
+            (ngModelChange)="onInputChange($event)"
+            [id]="id"
+            [(ngModel)]="typeHeadValue"
+            [disabled]="isDisabled"
+            [placeholder]="placeholder" />
+    </div>
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-secondary typehead-btn" (click)="toggleOptions()" [disabled]="isDisabled">
+            <i class="dropdown-toggle"></i>
+        </button>
+    </span>
+</div>
+<div *ngIf="debug">debug: {{selectedOptionsValue|json}}</div>
