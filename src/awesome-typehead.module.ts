@@ -6,6 +6,7 @@ import { AwesomeTypeheadComponent } from './awesome-typehead/awesome-typehead.co
 import { AwesomeTypeheadMultipleComponent } from './awesome-typehead-multiple/awesome-typehead-multiple.component';
 import { AwesomeOptionsComponent } from './awesome-options/awesome-options.component';
 
+
 @NgModule({
     imports: [
         CommonModule,
@@ -15,7 +16,7 @@ import { AwesomeOptionsComponent } from './awesome-options/awesome-options.compo
     declarations: [
         AwesomeTypeheadComponent,
         AwesomeTypeheadMultipleComponent,
-        AwesomeOptionsComponent
+        AwesomeOptionsComponent,
     ],
     providers: [
     ],

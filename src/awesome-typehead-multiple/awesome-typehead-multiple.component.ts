@@ -2,7 +2,7 @@ import { Component, Input, OnInit, ElementRef, forwardRef, ComponentFactoryResol
     ViewContainerRef, ComponentRef, OnDestroy, Output, EventEmitter } from '@angular/core';
 import { FormControl, ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs/Rx';
 import { Subscription } from 'rxjs/Subscription';
 import { Subject } from 'rxjs/Subject';
 
