@@ -1,0 +1,16 @@
+$gray-base:  #a2a2a2;
+
+.a-options{
+    > ul {
+        width: 100%;
+    }
+    > ul > li > a {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        
+        &.hover {
+            background-color: rgba($gray-base,.1);
+            color: inherit;        
+        }
+    }
+}
