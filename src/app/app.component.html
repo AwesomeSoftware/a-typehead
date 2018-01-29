@@ -1,1 +1,22 @@
-<a-typehead></a-typehead>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group row mt-3">
+            <div class="col-lg-4 offset-4">
+                <a-typehead 
+                    [id]="'state'"
+                    [formControl]="state"
+                    [options]="states">
+                </a-typehead>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-4 offset-4">
+                <a-typehead-multiple 
+                    [id]="'city'"
+                    [formControl]="city"
+                    [options]="cities">
+                </a-typehead-multiple>
+            </div>
+        </div>
+    </div>
+</div>

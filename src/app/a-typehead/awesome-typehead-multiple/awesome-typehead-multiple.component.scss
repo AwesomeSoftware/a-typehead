@@ -26,4 +26,44 @@
             font-size: 0.8rem;
         }
     }
+    .input-group .form-control {
+        position: relative;
+        z-index: 2;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        width: 1%;
+        margin-bottom: 0;
+    }
+    .input-group-btn:not(:first-child) > .btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .input-group-btn:not(:first-child) > .btn:first-child {
+        margin-left: -1px;
+    }
+    .input-group-btn > .btn {
+        border-color: rgba(0, 0, 0, 0.26);
+        position: relative;
+    }
+    .btn-secondary {
+        color: #59676b;
+        background-color: #fff;
+    }
+    .btn-secondary:hover {
+        color: #111;
+        background-color: whitesmoke;
+        border-color: #e0e5e8;
+    }
+    .btn-secondary:focus {
+        box-shadow: 0 0 0 2px rgba(236, 239, 241, 0.5);
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+        outline: none !important;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        font-family: inherit;
+        line-height: 1.25;
+    }
+    
 }

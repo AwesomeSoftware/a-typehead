@@ -5,8 +5,7 @@
             *ngFor="let option of selectedOptionsValue; let index=index">
             <span class="option-text">{{option.text}}</span>
             <span class="option-close"
-                (click)="onOptionRemove(option)">
-                <i class="ion-close-round"></i>
+                (click)="onOptionRemove(option)">&times;
             </span>
         </span>
         <input type="text" class="form-control typehead-input" autocomplete="off"
