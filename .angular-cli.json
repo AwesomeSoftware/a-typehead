@@ -5,6 +5,7 @@
   },
   "apps": [
     {
+      "name": "mainLibrary",
       "root": "src",
       "outDir": "dist",
       "assets": [
@@ -18,6 +19,32 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "demo",
+      "root": "demo/src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main2.ts",
+      "polyfills": "polyfills2.ts",
+      "test": "test2.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "demo",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.scss"
