@@ -1,1 +1,1 @@
-export * from './src/app/a-typehead/awesome-typehead.module';
+export * from './src/a-typehead/awesome-typehead.module';

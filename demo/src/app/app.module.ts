@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { AwesomeTypeheadModule } from 'awesome-typehead';
+import { AwesomeTypeheadModule } from '../../../src/a-typehead/awesome-typehead.module';
 
 
 @NgModule({
